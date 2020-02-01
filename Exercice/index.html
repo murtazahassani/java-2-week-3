@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+<style>
+h1
+{
+  text-align: center;
+  text-shadow: 5px 6px  8px red;
+}
+</style>
+  <body>
+    <h1>HOMEWORK WEEK 3</h1>
+    <script>
+      // Exercise Sections
+
+
+      // --------------------------------the seconde Exercise
+
+      // Exercise 2: Take out the duplicates
+      // Write a function called removeDuplicates, that takes in an array as an argument:
+      // const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
+      // The function should remove duplicate letters. So the result should be:
+
+      const letters = ["a", "b", "c", "d", "a", "e", "f", "c", "b"];
+
+      function removeDuplicates(arr) {
+        let unique_array = [];
+        for (let i = 0; i < arr.length; i++) {
+          if (unique_array.indexOf(arr[i]) == -1) {
+            unique_array.push(arr[i]);
+          }
+        }
+        return unique_array;
+      }
+      console.table(removeDuplicates(letters)); //result 'a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'
+
+
+
+      // --------------------------------the third Exercise
+      // Exercise 3: Guess the output
+
+      // In this exercise you'll be presented with a code snippet.
+      //  Your task is to guess the output and write out your reasoning in 50 words or less.
+
+      let a = 10;
+      // first we declared a variable a and than assigned equal to 10;
+
+      const x = (function() {
+        // and than created a local function named x
+
+        a = 12;
+        // and than inside of the function we have another variable that again (a = 12;)
+
+        return function() {
+          //here we returned the local function
+
+          // alert(a); //and than we use alert to show us a pop in our page: the result will be 12
+          // because it will display the seconde a that is inside if the function
+        };
+      })();
+      x();
+      //-------------------------============the ford Exercise
+
+//       Exercise 4: Guess more
+// In this exercise you'll be presented with another code snippet. Guess the output and write out your reasoning in 50 words or less.
+
+// const x = 9; // first we have declared a  variable with  (x) assigned to 9;
+
+function f1(val) { //than here we have a function we named f1 (f1) is mean function 1: than we giv theme a parameter named val
+
+  val = val + 1; //here we take the parameter val and than assigned with val and + to 1 
+
+  return val; // than returned that parameter of our function that's (val)
+} 
+// f1(x);
+console.log(x); //the output of x will be (9)
+
+
+const y = { x: 9 };
+function f2(val) {
+  val.x = val.x + 1;
+  return val;
+}
+f2(y);
+console.log(y); //the output of y will be (10)
+
+
+    </script>
+  </body>
+</html>

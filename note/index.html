@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <style>
+      #myDiv1,
+      #myDiv2 {
+        background-color: green;
+        padding: 50px;
+        box-shadow: 0 10px rgb(149, 175, 3);
+        border-radius: 30px;
+        width: 800px;
+        align-items: center;
+        position: relative;
+        left: 16%;
+      }
+
+      #myP1,
+      #myP2 {
+        background-color: #000;
+        font-size: 23px;
+        border: 1px solid;
+        color: #fff;
+        padding: 20px;
+        box-shadow: 0 10px #fff;
+        border-radius: 30px;
+      }
+
+      body {
+        background-image: url("https://gist.github.com/brettlangdon/85942af486eb79118467/raw/2a7409cd3c26a90b2e82bdc40dc7db18b92b3517/EdAGGFS.jpg");
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      b {
+        color: crimson;
+      }
+    </style>
+
+    <div id="myDiv1">
+      <h2>1. Scope:</h2>
+      <p id="myP1">
+        <b>Scoop</b> is the biggest source of confusion regarding
+        <b>Variables</b>
+      </p>
+    </div>
+
+    <br />
+    <div id="myDiv1">
+      <h2>1. code example of Scoop :</h2>
+      <p id="myP1">
+        // those example is about Scoop
+        <br />
+        <b>
+          // let myName = "murtaza"; <br />
+          // function amazingFunction() { <br />
+          // let myName = "murtaza hassani"; <br />
+          // if (2 + 2 == 4) { <br />
+          // let myName = "murtaza the 3rd"; <br />
+          // console.log("inside the if statement", myName); <br />
+          // } <br />
+          // console.log("inside out function", myName); <br />
+          // } <br
+        /></b>
+      </p>
+    </div>
+    <br />
+
+    <div id="myDiv1">
+      <h2>2. Context:</h2>
+      <p id="myP1">
+        <b>Context</b> is the biggest source of confusion regarding
+        <b>Objects</b>
+      </p>
+    </div>
+    <br />
+    <div id="myDiv1">
+      <h2>2. code example of Context:</h2>
+      <p id="myP1">
+        // this is example i about Context <br />
+        <b>
+          let murtaza = { <br />
+          firstName: "Murtaza", <br />
+          lastName: "hassani", <br />
+          drivCare() { <br />
+          console.log(this.firstName + " " + this.lastName + " is driving a
+          car.") <br />
+          } //what is (THIS) Keyword? <br />
+          // that this keyword points towrads the object that is executing the
+          current function <br />
+          } <br />
+          murtaza.drivCare() <br />
+        </b>
+      </p>
+    </div>
+    <br />
+    <br />
+    <div id="myDiv1">
+      <h2>3. this:</h2>
+      <p id="myP1">
+        what is <b>(THIS) </b> Keyword? that this keyword points towards the
+        <b>object</b> that is executing the current function
+      </p>
+    </div>
+    <br />
+    <div id="myDiv1">
+      <h2>4. Execution context:</h2>
+      <p id="myP1">
+        <b>Execution context</b> is a concept in the language spec that—in
+        layman's terms—roughly equates to the 'environment' a function executes
+        in; that is, variable scope (and the scope chain, variables in closures
+        from outer scopes), function arguments, and the value of the this
+        object.
+      </p>
+    </div>
+
+    <br />
+    <div id="myDiv1">
+      <h2>5. Global vs. local (function and block) Scope:</h2>
+      <p id="myP1">
+        <b> Global vs. local (function and block) Scope</b> can be divided into
+        two basic types: <b> global</b> and <b> local scope.</b> In any given
+        application, there is one global scope. But there can be many local
+        scopes. Any variable declared outside of a function belongs to the
+        global scope and is therefore accessible from anywhere in the code.
+        Variables declared within a local scope are only accessible within that
+        scope. Local scope can be further divided into two categories: function
+        and block. Let's look at function scope first. A unique local scope gets
+        created whenever a function is declared. The variables declared within
+        will only be accessible within that scope, nowhere else. This makes it
+        possible to declare variables within the same name in each different
+        local scope. This also means that it's not possible to refer to a
+        variable declared in one local scope, within another local scope.
+      </p>
+    </div>
+
+    <br />
+    <div id="myDiv1">
+      <h2>
+        6.JavaScript: Introduction to Scope (function scope, block scope) <br />
+        <b>What is Scope? </b>
+        :
+      </h2>
+      <p id="myP1">
+        Scope determines the visibility or accessibility of a variable or other
+        resource in the area of your code.
+      </p>
+    </div>
+
+    <br />
+    <div id="myDiv1">
+      <h2>7. Global Scope:</h2>
+      <p id="myP1">
+        There's only one Global scope in the JavaScript document. The area
+        outside all the functions is consider the global scope and the variables
+        defined inside the global scope can be accessed and altered in any other
+        scopes.
+      </p>
+    </div>
+    <br />
+    <div id="myDiv1">
+      <h2>8. Local Scope:</h2>
+      <p id="myP1">
+        Variables declared inside the functions become Local to the function and are considered in the corresponding local scope. Every Functions has its own scope. Same variable can be used in different functions because they are bound to the respective functions and are not mutual visible.
+      </p>
+    </div>
+    <br />
+    <div id="myDiv1">
+      <h2>9.         Function Scope
+        :</h2>
+      <p id="myP1">
+                  Whenever you declare a variable in a function, the variable is visible only within the function. You can't access it outside the function. var is the keyword to define variable for a function-scope accessibility.      </p>
+    </div>
+    <br />
+    <div id="myDiv1">
+      <h2>10. Closure  چیست؟!:</h2>
+      <p id="myP1">
+       
+        Closure  یک تابع هست که به متغیرهای توابع خارجی دسترسی دارد! <br>
+        Closure سه سطح دسترسی داره : <br>
+        1 – دسترسی به حوزه یا محدوده خودش <br>
+        2 – دسترسی به متغیرهای توابع خارجی <br>
+        3 – دسترسی به متغیرهای global <br>
+             </div>
+    <br />
+    <div id="myDiv1">
+      <h2>11.closure:</h2>
+      <p id="myP1">
+        A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+    </div>
+    <br />
+    <div id="myDiv1">
+      <h2>10.Const and let:</h2>
+      <p id="myP1">
+                  Whenever you declare a variable in a function, the variable is visible only within the function. You can't access it outside the function. var is the keyword to define variable for a function-scope accessibility.      </p>
+    </div>
+
+
+    
+    <script>
+        //     those example is about Scoop
+  
+        //  let myName = "murtaza";
+        //  function amazingFunction() {
+        //    let myName = "murtaza hassani";
+        //    if (2 + 2 == 4) {
+        //      let myName = "murtaza the 3rd";
+        //      console.log("inside the if  statement", myName);
+        //    }
+        //    console.log("inside out function", myName);
+        //  }
+  
+        //  amazingFunction();
+        //  console.log("in the global scope ", myName);
+  
+        // the another
+  
+        //  var name = "hussain";
+        //  var age = 21;
+        //  var job = "teacher"
+  
+        //  function myFunction(){
+        //  }
+        //  console.log(name +  age + job)
+        //  myFunction();
+  
+        //  this is example i about Context
+        let murtaza = {
+          firstName: "Murtaza",
+          lastName: "hassani",
+          drivCare() {
+            console.log(
+              this.firstName + " " + this.lastName + " is driving a car."
+            );
+          } //what is (THIS) Keyword?
+          // that this keyword points towrads the object that  is executing the current function
+        };
+        murtaza.drivCare();
+  
+        // // how to call a function
+        // function imAFunctionMethod() {
+        //     console.log(this)
+        //     // here i will call back the function
+        //     imAFunctionMethod() // the prantcies is mean i called back the func()
+  
+        function breathe() {
+          console.log(
+            this.firstName + " " + this.lastName + " just inhaled and exhaled."
+          );
+        }
+        breathe.call(murtaza);
+  
+        function createLocalScope() {
+          const localVariable =
+            "this variable can only be accessed within this function";
+          console.log(localVariable);
+  
+          const localOnlyHere =
+            "This variable can only be accessed here, nowhere else";
+        }
+  
+        function createAnotherLocalScope() {
+          const localVariable =
+            "Even though this variable has the same name, it has nothing to do with the other localVariable, because it doesn't exist outside of that function";
+          console.log(localVariable);
+        }
+  
+        createLocalScope();
+        createAnotherLocalScope();
+  
+        //    However, variables declared within the global scope can be accessed anywhere! Actually,
+        //  that's the very purpose of global scope. In the context of functions this means that you don't
+        // have to pass it as an argument, but that you can directly refer to it within the function.
+  
+        //globalVariable
+        const globalVariable =
+          "This variable can be accessed wherever in the code";
+  
+        function accessGlobalVariable() {
+          console.log(globalVariable);
+        }
+        console.log(globalVariable);
+  
+        accessGlobalVariable();
+  
+        // just an example
+        const globaly = "this is a globaly";
+        function cassbalyGlobal() {
+          console.log(globaly);
+        }
+        console.log(globaly);
+        cassbalyGlobal();
+  
+        //global scope
+        var fruit = "apple";
+        console.log(fruit); //apple
+        function getFruit() {
+          console.log(fruit); //fruit is accessible here
+        }
+        getFruit(); //apple
+  
+        //global scope
+        function foo1() {
+          //local scope 1
+          function foo2() {
+            //local scope 2
+          }
+        }
+  
+        //global scope
+        function foo3() {
+          //local scope 3
+        }
+  
+        //global scope
+  
+  
+        var age = 100;
+  if(age > 12) {
+    var dogYears = age * 7;
+    console.log(`You are ${dogYears} dog years old!`);
+  }
+      </script>
+  </body>
+</html>
